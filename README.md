@@ -2,6 +2,28 @@
 
 Assistente de criptomoedas com **IA (Groq)**, **dados reais** (CoinGecko), **notícias** (RSS CoinDesk), **portfólio** e **alertas de preço** — projeto de portfólio com código modular e fácil manutenção.
 
+## Demonstração
+
+Interface web (Next.js). O chat usa **function calling** para buscar preço e mercado antes de responder. As imagens abaixo mostram as principais telas.
+
+| Chat com IA e dados reais | Portfólio (USD/BRL, 24h) |
+|:---:|:---:|
+| ![Chat — preço do Bitcoin e mercado](docs/images/demo-01-chat.png) | ![Portfólio com BTC e ETH](docs/images/demo-02-portfolio.png) |
+
+| Notícias (RSS + resumo IA) | Alertas de preço |
+|:---:|:---:|
+| ![Feed CoinDesk e resumo](docs/images/demo-03-news.png) | ![Alertas acima/abaixo do alvo](docs/images/demo-04-alerts.png) |
+
+> **CryptoGPT** — Groq + CoinGecko + RSS; histórico de chat no navegador; portfólio e alertas em `localStorage` (demo sem login).
+
+## Portfólio
+
+| Projeto | Repositório | Demo |
+|---------|-------------|------|
+| **CryptoGPT** (este) | [github.com/rafaelcostr/crypto-gpt](https://github.com/rafaelcostr/crypto-gpt) | Screenshots acima |
+| [whatsapp-atendimento-bot](https://github.com/rafaelcostr/whatsapp-atendimento-bot) | Bot WhatsApp + Groq | Screenshots no repo |
+| [Crypto-Dashboard](https://github.com/rafaelcostr/Crypto-Dashboard) | Dashboard visual | [Vercel](https://crypto-dashboard-iota-peach.vercel.app) |
+
 ## Funcionalidades
 
 - **Chat:** perguntas sobre preços, mercado e notícias; a IA chama ferramentas antes de responder (sem inventar cotação). Histórico salvo no navegador (`localStorage`, até 50 mensagens).
@@ -60,20 +82,13 @@ Abra [http://localhost:3000](http://localhost:3000).
 | `npm start` | Servidor após build |
 | `npm run lint` | ESLint |
 | `npm run typecheck` | Verificação TypeScript |
+| `npm run screenshots` | Gera prints em `docs/images/` (app rodando) |
 
 ## Deploy (Vercel)
 
 1. Importe o repositório na Vercel.
 2. Adicione `GROQ_API_KEY` em **Environment Variables**.
 3. Deploy.
-
-## Portfólio relacionado
-
-| Projeto | Foco |
-|---------|------|
-| [whatsapp-atendimento-bot](https://github.com/rafaelcostr/whatsapp-atendimento-bot) | Bot WhatsApp + Groq |
-| [Crypto-Dashboard](https://github.com/rafaelcostr/Crypto-Dashboard) | Dashboard visual |
-| **CryptoGPT** (este repo) | Chat IA + portfólio + notícias |
 
 ## Roadmap
 
