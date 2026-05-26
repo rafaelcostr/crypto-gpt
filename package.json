@@ -1,17 +1,25 @@
 {
   "name": "crypto-gpt",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Assistente de criptomoedas com IA (Groq), CoinGecko, notícias, portfólio e alertas",
   "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "groq-sdk": "^1.2.0",
     "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
