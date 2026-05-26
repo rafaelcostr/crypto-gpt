@@ -33,7 +33,7 @@ Detalhes: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 ## Instalação
 
 ```bash
-git clone https://github.com/SEU_USUARIO/crypto-gpt.git
+git clone https://github.com/rafaelcostr/crypto-gpt.git
 cd crypto-gpt
 npm install
 cp .env.example .env.local
@@ -73,6 +73,7 @@ Abra [http://localhost:3000](http://localhost:3000).
 |---------|------|
 | [whatsapp-atendimento-bot](https://github.com/rafaelcostr/whatsapp-atendimento-bot) | Bot WhatsApp + Groq |
 | [Crypto-Dashboard](https://github.com/rafaelcostr/Crypto-Dashboard) | Dashboard visual |
+| **CryptoGPT** (este repo) | Chat IA + portfólio + notícias |
 
 ## Roadmap
 
