@@ -7,7 +7,7 @@ export const WELCOME_MESSAGE: ChatMessage = {
   id: "welcome",
   role: "assistant",
   content:
-    "Olá! Sou o CryptoGPT. Pergunte sobre preços, mercado, notícias ou sua carteira (aba Portfólio). Uso dados reais da CoinGecko e RSS — não invento cotações.",
+    "Olá! Sou o CryptoGPT. Pergunte sobre preços, mercado, notícias ou sua carteira (aba Portfólio). Uso dados reais do CoinGecko e do RSS — não invento cotações.",
   createdAt: new Date().toISOString(),
 };
 

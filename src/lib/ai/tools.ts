@@ -12,11 +12,11 @@ export const CRYPTO_TOOLS: Groq.Chat.Completions.ChatCompletionTool[] = [
     function: {
       name: "get_coin_price",
       description:
-        "Preço atual em USD/BRL e variação 24h de uma cripto (id CoinGecko ou símbolo, ex: bitcoin, btc, ethereum).",
+        "Preço atual em USD/BRL e variação 24h de uma cripto (ID CoinGecko ou símbolo, ex: bitcoin, btc, ethereum).",
       parameters: {
         type: "object",
         properties: {
-          query: { type: "string", description: "Id ou símbolo da moeda" },
+          query: { type: "string", description: "ID ou símbolo da moeda" },
         },
         required: ["query"],
       },
@@ -101,6 +101,6 @@ export async function runTool(
       });
     }
     default:
-      return JSON.stringify({ error: `Tool desconhecida: ${name}` });
+      return JSON.stringify({ error: `Ferramenta desconhecida: ${name}` });
   }
 }

@@ -16,7 +16,7 @@ import { newId } from "@/lib/utils/format";
 import type { ChatMessage, ChatResponseBody } from "@/types/chat";
 
 const STARTERS = [
-  "Qual o preço do Bitcoin agora?",
+  "Qual é o preço do Bitcoin agora?",
   "Resumo do mercado hoje",
   "Últimas notícias de cripto",
   "Como está minha carteira?",
@@ -167,7 +167,7 @@ export function ChatPanel() {
             <p className="font-medium text-amber-200">
               {groqHint === "format"
                 ? "Chave Groq com formato inválido"
-                : "Chat desativado — falta API Groq"}
+                : "Chat desativado — falta a chave da API Groq"}
             </p>
             <ol className="mt-2 list-decimal list-inside space-y-1 text-xs text-amber-100/80">
               <li>
@@ -188,7 +188,7 @@ export function ChatPanel() {
                 <code className="text-amber-200">GROQ_API_KEY=gsk_sua_chave</code>{" "}
                 — sem aspas, sem espaços no início
               </li>
-              <li>Pare o servidor (Ctrl+C) e rode de novo: npm run dev</li>
+              <li>Pare o servidor (Ctrl+C) e execute novamente: npm run dev</li>
             </ol>
           </div>
         )}

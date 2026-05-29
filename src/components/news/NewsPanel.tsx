@@ -54,7 +54,7 @@ export function NewsPanel() {
           disabled={summarizing || loading}
           className="rounded-lg bg-emerald-500 px-4 py-2 text-sm font-medium text-[#06080f] disabled:opacity-40 hover:bg-emerald-400"
         >
-          {summarizing ? "Resumindo com IA…" : "Resumo IA"}
+          {summarizing ? "Resumindo com IA…" : "Resumo com IA"}
         </button>
       </div>
 

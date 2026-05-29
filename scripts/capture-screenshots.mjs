@@ -17,13 +17,13 @@ const demoChat = [
     id: "welcome",
     role: "assistant",
     content:
-      "Olá! Sou o CryptoGPT. Pergunte sobre preços, mercado, notícias ou sua carteira (aba Portfólio). Uso dados reais da CoinGecko e RSS — não invento cotações.",
+      "Olá! Sou o CryptoGPT. Pergunte sobre preços, mercado, notícias ou sua carteira (aba Portfólio). Uso dados reais do CoinGecko e do RSS — não invento cotações.",
     createdAt: "2026-05-22T12:00:00.000Z",
   },
   {
     id: "u1",
     role: "user",
-    content: "Qual o preço do Bitcoin agora?",
+    content: "Qual é o preço do Bitcoin agora?",
     createdAt: "2026-05-22T12:01:00.000Z",
   },
   {

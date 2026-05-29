@@ -16,19 +16,19 @@ Interface web (Next.js). O chat usa **function calling** para buscar preço e me
 
 > **CryptoGPT** — Groq + CoinGecko + RSS; histórico de chat no navegador; portfólio e alertas em `localStorage` (demo sem login).
 
-## Portfólio
+## Outros projetos
 
 | Projeto | Repositório | Demo |
 |---------|-------------|------|
-| **CryptoGPT** (este) | [github.com/rafaelcostr/crypto-gpt](https://github.com/rafaelcostr/crypto-gpt) | Screenshots acima |
-| [whatsapp-atendimento-bot](https://github.com/rafaelcostr/whatsapp-atendimento-bot) | Bot WhatsApp + Groq | Screenshots no repo |
+| **CryptoGPT** (este) | [github.com/rafaelcostr/crypto-gpt](https://github.com/rafaelcostr/crypto-gpt) | Capturas de tela acima |
+| [whatsapp-atendimento-bot](https://github.com/rafaelcostr/whatsapp-atendimento-bot) | Bot WhatsApp + Groq | Capturas no repositório |
 | [Crypto-Dashboard](https://github.com/rafaelcostr/Crypto-Dashboard) | Dashboard visual | [Vercel](https://crypto-dashboard-iota-peach.vercel.app) |
 
 ## Funcionalidades
 
-- **Chat:** perguntas sobre preços, mercado e notícias; a IA chama ferramentas antes de responder (sem inventar cotação). Histórico salvo no navegador (`localStorage`, até 50 mensagens).
+- **Chat:** perguntas sobre preços, mercado e notícias; a IA chama ferramentas antes de responder (sem inventar cotações). Histórico salvo no navegador (`localStorage`, até 50 mensagens).
 - **Portfólio:** adicionar ativos, valor em USD/BRL, variação 24h (salvo no navegador).
-- **Notícias:** feed RSS + botão **Resumo IA**.
+- **Notícias:** feed RSS + botão **Resumo com IA**.
 - **Alertas:** preço alvo acima/abaixo; verificação manual (demo).
 
 ## Stack
@@ -43,7 +43,7 @@ Interface web (Next.js). O chat usa **function calling** para buscar preço e me
 ```
 src/
 ├── app/api/           # Route handlers (BFF)
-├── components/        # UI por feature
+├── components/        # UI por funcionalidade
 ├── config/            # Variáveis de ambiente (Zod)
 ├── lib/ai/            # Agent + tools + prompts
 ├── lib/integrations/  # CoinGecko, notícias
@@ -82,7 +82,7 @@ Abra [http://localhost:3000](http://localhost:3000).
 | `npm start` | Servidor após build |
 | `npm run lint` | ESLint |
 | `npm run typecheck` | Verificação TypeScript |
-| `npm run screenshots` | Gera prints em `docs/images/` (app rodando) |
+| `npm run screenshots` | Gera capturas de tela em `docs/images/` (app rodando) |
 
 ## Deploy (Vercel)
 
